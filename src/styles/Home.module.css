@@ -17,7 +17,6 @@
   width: 100%;
   margin: 0 auto;
   padding: 24px 20px;
-  color: #b2b2b2;
 }
 
 .content h2 {
@@ -36,4 +35,11 @@
   width: 100%;
   margin: 0 auto;
   padding: 24px 20px;
+}
+
+.footer a {
+  padding: 1rem 2rem;
+  background: #202024;
+  border-radius: 5px;
+  color: #996dff;
 }
