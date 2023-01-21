@@ -6,9 +6,12 @@ export default function Home() {
   return (
     <>
       <header className={styles.header}>
-        <Image src={LogoImg} width={286 / 2} alt="" />
+        <Image src={LogoImg} width={286 / 2} alt="Blog acessível" />
         <nav className={styles.nav}>
-          <a href="https://github.com/isadorabrito">
+          <a
+            href="https://github.com/isadorabrito"
+            aria-label="Github"
+          >
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -57,9 +60,12 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <Image src={LogoImg} width={286 / 2} alt="" />
+        <Image src={LogoImg} width={286 / 2} alt="Blog acessível" />
         <nav className={styles.nav} aria-label="Rodapé">
-          <a href="https://github.com/isadorabrito">
+          <a
+            href="https://github.com/isadorabrito"
+            aria-label="Github"
+          >
             <svg
               stroke="currentColor"
               fill="currentColor"
