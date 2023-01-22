@@ -72,13 +72,16 @@ export default function Home() {
               </button>
             </Dialog.Trigger>
             <Dialog.Portal>
-              <Dialog.Overlay />
+              <Dialog.Overlay className={styles.overlay} />
 
               <Dialog.Content className={styles.modal}>
                 <Dialog.Title>Termos de uso</Dialog.Title>
                 <Dialog.Description>
                   Esses são os termos de uso
                 </Dialog.Description>
+                <Dialog.Close asChild>
+                  <button className={styles.closeModalButton}>Fechar</button>
+                </Dialog.Close>
               </Dialog.Content>
             </Dialog.Portal>
           </Dialog.Root>
