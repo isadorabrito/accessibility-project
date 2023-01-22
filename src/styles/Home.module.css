@@ -42,11 +42,12 @@
   padding: 24px 20px;
 }
 
-.footer a {
+.footer button {
   padding: 1rem 2rem;
-  background: #202024;
+  background: transparent;
   border-radius: 5px;
   color: #996dff;
+  font-size: 1rem;
 }
 
 .modal {
