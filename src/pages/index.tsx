@@ -4,6 +4,7 @@ import LogoImg from "../assets/logo.svg";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -68,6 +69,11 @@ export default function Home() {
           </a>
         </nav>
       </footer>
+
+      <div className={styles.modal}>
+        <h2>Termos de uso</h2>
+        <p>Esses são os termos de uso</p>
+      </div>
     </>
   );
 }
