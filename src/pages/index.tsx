@@ -1,9 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 import LogoImg from "../assets/logo.svg";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function handleModalOpen() {
+    setIsModalOpen(true);
+  }
 
   return (
     <>
@@ -64,16 +70,18 @@ export default function Home() {
       <footer className={styles.footer}>
         <Image src={LogoImg} width={286 / 2} alt="Blog acessível" />
         <nav className={styles.nav} aria-label="Rodapé">
-          <a href="https://github.com/isadorabrito" aria-label="Github">
+          <button type="button" onClick={handleModalOpen} aria-label="Github">
             Termos de uso
-          </a>
+          </button>
         </nav>
       </footer>
 
-      <div className={styles.modal}>
-        <h2>Termos de uso</h2>
-        <p>Esses são os termos de uso</p>
-      </div>
+      {isModalOpen && (
+        <div className={styles.modal}>
+          <h2>Termos de uso</h2>
+          <p>Esses são os termos de uso</p>
+        </div>
+      )}
     </>
   );
 }
